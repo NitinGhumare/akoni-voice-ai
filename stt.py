@@ -1,9 +1,3 @@
-import whisper
-
-model = whisper.load_model("small")
-
-def transcribe(audio_file):
-
-    result = model.transcribe(audio_file, language="en")
-
-    return result["text"]
+def transcribe(audio_path):
+    # Whisper disabled for cloud deployment
+    return "Voice transcription disabled in cloud deployment"
